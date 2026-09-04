@@ -118,6 +118,15 @@ import MIDIDiagramLayered from "/assets/projects/bare_metal_midi/diagram_layered
 import MIDIDiagram from "/assets/projects/bare_metal_midi/diagram_lcd.png";
 
 import ZipRecruiterLogo from "/assets/experience/ziprecruiter/ziprecruiter_logo.png";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone"
+import EmailIcon from '@mui/icons-material/Email';
+import ApiIcon from '@mui/icons-material/Api';
+import RDBCandidateDetail from "/assets/experience/ziprecruiter/rdb_candidate_detail.png";
+import RDBProjectDashboard from "/assets/experience/ziprecruiter/rdb_project_dashboard.png";
+import RDBRecruiterActivity from "/assets/experience/ziprecruiter/rdb_recruiter_activity.png";
+import RDBCandidatePipeline from "/assets/experience/ziprecruiter/rdb_candidate_pipeline.png";
+import ZipIntroSchedule from "/assets/experience/ziprecruiter/zipintro_schedule.png";
+import CandidateReview from "/assets/experience/ziprecruiter/candidate_review.png";
 
 function App() {
   return (
@@ -135,9 +144,27 @@ function App() {
         <Experience
           title="Software Engineer II"
           organization="ZipRecruiter • Full-time"
-          duration="Starting June 2026"
+          duration="June 2026 - Present"
           companyLogo={ZipRecruiterLogo}
-        ></Experience>
+          tags={["Next.js", "TypeScript", "Go", "gRPC", "Perl"]}
+          imgs={[RDBCandidateDetail, RDBProjectDashboard, RDBRecruiterActivity, RDBCandidatePipeline, ZipIntroSchedule, CandidateReview]}
+        >
+          <FeatureCard
+            title="Responsive Designs"
+            text="Implemented responsive designs across the employer site to provide a consistent, accessible experience across desktop and mobile devices."
+            img={<PhoneIphoneIcon style={{ color: "white" }} />}
+          />
+          <FeatureCard
+            title="Email Migration"
+            text="Migrated employer email classes from a legacy Perl monolith to a Go microservice, implementing handlers, templates, and a phased shadow-comparison rollout."
+            img={<EmailIcon style={{ color: "white" }} />}
+          />
+          <FeatureCard
+            title="gRPC Migration"
+            text="Migrated job lifecycle actions from Perl to TypeScript gRPC services, implementing entity-layer RPCs, BFF endpoints, billing teardown integration, and frontend wiring."
+            img={<ApiIcon style={{ color: "white" }} />}
+          />
+        </Experience>
         <Divider style={{ backgroundColor: "#444", width: "90%" }} />
         <Experience
           title="Software Developer Intern"
