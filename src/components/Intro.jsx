@@ -38,9 +38,9 @@ export function Intro() {
           Kevin Nguy
         </h1>
         <p className="text-neutral-400 text-md md:text-lg font-semibold md:whitespace-pre-line">
-          {`I am a current fourth year studying computer science at UC Irvine.
-                    My interests include web development, artificial intelligence, 
-                    machine learning, and computer graphics.`}
+          {`I am currently a Software Engineer II working at ZipRecruiter.
+                    My interests include web development, computer graphics, 
+                    and Minecraft modding.`}
         </p>
         <div className="z-10">
           <IconButton target="_blank" href="https://github.com/kevinpnguy01">
